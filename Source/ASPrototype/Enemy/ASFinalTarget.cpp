@@ -28,5 +28,6 @@ void AASFinalTarget::SetDead()
 
 void AASFinalTarget::BeginPlay()
 {
+	Super::BeginPlay();
 	CurGameMode = Cast<AASGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 }
